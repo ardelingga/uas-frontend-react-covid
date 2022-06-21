@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./Navbar.module.css"
 function Navbar(){
     return(
@@ -8,10 +9,10 @@ function Navbar(){
                 </div>
                 <div>
                     <ul className={styles.navbar__list}>
-                        <li className={styles.navbar__item}>Global</li>
-                        <li className={styles.navbar__item}>Indonesia</li>
-                        <li className={styles.navbar__item}>Provinsi</li>
-                        <li className={styles.navbar__item}>About</li>
+                        <li className={styles.navbar__item}><Link to="/"> Global </Link></li>
+                        <li className={styles.navbar__item}><Link to="/indonesia"> Indonesia </Link></li>
+                        <li className={styles.navbar__item}><Link to="/provinsi"> Provinsi </Link></li>
+                        <li className={styles.navbar__item}><Link to="/about"> About </Link></li>
                     </ul>
                 </div>
             </nav>

@@ -1,10 +1,10 @@
 import CardGlobal from "../CardGlobal/CardGlobal"
-import styles from "./Global.module.css"
+import styles from "./GlobalCovid.module.css"
 import data from "../../utils/constants/indonesia"
 
-function Global(){
+function GlobalCovid(){
 
-    const listGlobalStatus = data.indonesia
+    const listGlobalCovidStatus = data.indonesia
 
     return(
         <div className={styles.container}>
@@ -15,7 +15,7 @@ function Global(){
                 </div>
                 <div className={styles.grid_container}>
                     {
-                        listGlobalStatus.map(function(globalStatus){
+                        listGlobalCovidStatus.map(function(globalStatus){
                             return <CardGlobal status={globalStatus.status} jumlah={globalStatus.total} key={globalStatus.status} />
                         })
                     }
@@ -28,4 +28,4 @@ function Global(){
     )
 }
 
-export default Global
+export default GlobalCovid
