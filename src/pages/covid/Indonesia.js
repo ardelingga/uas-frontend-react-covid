@@ -1,8 +1,18 @@
+import { useState } from "react";
+import CovidForm from "../../components/CovidForm/CovidForm";
+import GlobalCovid from "../../components/GlobalCovid/GlobalCovid";
+import Hero from "../../components/Hero/Hero";
+import data from "../../utils/constants/provinces";
 
 function Indonesia(){
+    const [listProvinces, setListProvinces] = useState(data.provinces);
     return(
         <>
-            <h1>Indonesia</h1>
+            <main>
+                <Hero />
+                <GlobalCovid />
+                <CovidForm provinces={listProvinces} setProvinces={setListProvinces} />
+            </main>
         </>
     );
 }

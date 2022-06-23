@@ -17,7 +17,7 @@ function Global() {
         <GlobalCovid />
         <Provinces provinces={listProvinces} setProvinces={setListProvinces} />
         <CovidForm provinces={listProvinces} setProvinces={setListProvinces} />
-    </main>
+      </main>
     </>
   );
 }

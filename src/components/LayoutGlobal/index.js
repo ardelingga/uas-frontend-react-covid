@@ -1,7 +1,7 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 
-function GlobalLayout(props){
+function LayoutGlobal(props){
     return(
         <>
             <Navbar />
@@ -11,4 +11,4 @@ function GlobalLayout(props){
     )
 }
 
-export default GlobalLayout;
+export default LayoutGlobal;

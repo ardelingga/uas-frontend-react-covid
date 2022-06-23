@@ -1,7 +1,7 @@
-import styles from "./CovidForm.module.css"
 import { nanoid } from "nanoid";
 import { useState } from "react"
 import Alert from "../Alert/Alert";
+import CovidFormStyled from "./CovidFormStyled";
 
 function CovidForm(props){
     const [provinsi, setProvinsi] = useState("");
@@ -69,48 +69,50 @@ function CovidForm(props){
         }
     }
     return(
-        <div className={styles.container}>
-            <section className={styles.form_section}>
-                <div className={styles.form_section__right}>
-                    <img className={styles.form_section__image} src={require('../../assets/images/Image_form.png')} alt="Gambar" />
-                </div>
-                <div className={styles.form_section__left}>
-                    <h2 className={styles.form_section__title}>Form Covid</h2>
-                    <form onSubmit={handleSubmit}>
-                        <p>Provinsi</p>
-                        <select name="type" id="type" value={provinsi} onChange={handleProvinsi} className={styles.form__input}>
-                            <option value="none">Select Item</option>
-                            {
-                                provinces.map((province) => {
-                                    return <option key={province.kota} value={province.kota}>{province.kota}</option>
-                                })
-                            }
-                        </select>
-                        {isProvinsiError && <Alert>Provinsi Wajib Dipilih</Alert> }
-                        <br />
-                        
-                        <p>Status</p>
-                        <select name="type" id="type" value={status} onChange={handleStatus} className={styles.form__input}>
-                            <option value="none">Select Item</option>
-                            {
-                                statusCovid.map((type) => {
-                                    return <option key={type} value={type}>{type}</option>
-                                })
-                            }
-                        </select>
-                        {isStatusError && <Alert>Status Wajib Dipilih</Alert> }
-                        <br />
-                                
-                        <p>Jumlah</p>
-                        <input id="date" value={jumlah} onChange={handleJumlah} className={styles.form__input} type="number" />
-                        {isJumlahError && <Alert> Jumlah Wajib Diisi </Alert>}
-                        <br /><br /><br />
+        <CovidFormStyled>
+            <div className={`container`}>
+                <section className={`form_section`}>
+                    <div className={`form_section__right`}>
+                        <img className={`form_section__image`} src={require('../../assets/images/Image_form.png')} alt="Gambar" />
+                    </div>
+                    <div className={`form_section__left`}>
+                        <h2 className={`form_section__title`}>Form Covid</h2>
+                        <form onSubmit={handleSubmit}>
+                            <p>Provinsi</p>
+                            <select name="type" id="type" value={provinsi} onChange={handleProvinsi} className={`form__input`}>
+                                <option value="none">Select Item</option>
+                                {
+                                    provinces.map((province) => {
+                                        return <option key={province.kota} value={province.kota}>{province.kota}</option>
+                                    })
+                                }
+                            </select>
+                            {isProvinsiError && <Alert>Provinsi Wajib Dipilih</Alert> }
+                            <br />
+                            
+                            <p>Status</p>
+                            <select name="type" id="type" value={status} onChange={handleStatus} className={`form__input`}>
+                                <option value="none">Select Item</option>
+                                {
+                                    statusCovid.map((type) => {
+                                        return <option key={type} value={type}>{type}</option>
+                                    })
+                                }
+                            </select>
+                            {isStatusError && <Alert>Status Wajib Dipilih</Alert> }
+                            <br />
+                                    
+                            <p>Jumlah</p>
+                            <input id="date" value={jumlah} onChange={handleJumlah} className={`form__input`} type="number" />
+                            {isJumlahError && <Alert> Jumlah Wajib Diisi </Alert>}
+                            <br /><br /><br />
 
-                        <button className={styles.form__button}>Submit</button>
-                    </form>
-                </div>
-            </section>
-        </div>
+                            <button className={`form__button`}>Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </CovidFormStyled>
     )
 }
 

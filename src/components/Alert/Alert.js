@@ -1,8 +1,10 @@
-import styles from "./Alert.module.css"
+import AlertStyled from "./AlertStyled";
 
 function Alert(props){
     return(
-        <p className={styles.alert}>{props.children}</p>
+        <AlertStyled>
+            <p className={alert}>{props.children}</p>
+        </AlertStyled>
     )
 }
 
