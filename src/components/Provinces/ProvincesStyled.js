@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ProvincesStyled = styled.div`
     .container {
-        background-color: #fff;
+        background-color: #F8F9FA;
     }
 
     .container section {

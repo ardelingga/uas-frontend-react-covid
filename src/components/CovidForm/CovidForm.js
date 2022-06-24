@@ -1,14 +1,17 @@
-import { nanoid } from "nanoid";
 import { useState } from "react"
+import { useDispatch } from "react-redux";
+import { updateDataProvincesStatus } from "../../feature/covidSlice";
 import Alert from "../Alert/Alert";
 import CovidFormStyled from "./CovidFormStyled";
 
 function CovidForm(props){
+    const dispatch = useDispatch();
+
     const [provinsi, setProvinsi] = useState("");
     const [status, setStatus] = useState("");
     const [jumlah, setJumlah] = useState("");
 
-    const {provinces, setProvinces} = props;
+    const {provinces} = props;
 
     const statusCovid = ["Positif", "Sembuh", "Dirawat", "Meninggal"];
 
@@ -59,9 +62,7 @@ function CovidForm(props){
                 dirawat: parseInt(provinceFinded.dirawat, 10) + (status === "Dirawat" ? parseInt(jumlah, 10) : 0),
             }
 
-            provinces[indexProvinceFinded] = updateDataProvince;
-            
-            setProvinces([...provinces]);
+            dispatch(updateDataProvincesStatus({index:indexProvinceFinded, data: updateDataProvince}));
 
             setProvinsi("")
             setStatus("")

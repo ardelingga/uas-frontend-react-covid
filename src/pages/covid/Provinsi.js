@@ -1,20 +1,16 @@
-import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import CovidForm from "../../components/CovidForm/CovidForm";
-import GlobalCovid from "../../components/CovidStatus/CovidStatus";
 import Provinces from "../../components/Provinces/Provinces";
-import { useState } from "react"
-import data from "../../utils/constants/provinces"
+import { useSelector } from "react-redux";
 
 function Provinsi(){
-    const [listProvinces, setListProvinces] = useState(data.provinces);
+    const provincesCovidStatus = useSelector(store => store.covidStatus.provincesCovidStatus);
     return(
         <>
             <main>
                 <Hero />
-                <Provinces provinces={listProvinces} setProvinces={setListProvinces} />
-                <CovidForm provinces={listProvinces} setProvinces={setListProvinces} />
+                <Provinces provinces={provincesCovidStatus} />
+                <CovidForm provinces={provincesCovidStatus} />
             </main>
         </>
     );

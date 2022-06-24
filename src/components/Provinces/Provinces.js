@@ -2,7 +2,7 @@ import ProvincesStyled from "./ProvincesStyled";
 
 function Provinces(props){
 
-    const {provinces, setProvinces} = props;
+    const {provinces} = props;
     let iteration = 1;
     return(
         <ProvincesStyled>

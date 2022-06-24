@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CovidFormStyled = styled.div`
     /* Small Screen */
     .container {
-        background-color: #F8F9FA;
+        background-color: #FFF;
     }
 
     .form_section {

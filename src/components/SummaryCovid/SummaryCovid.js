@@ -1,8 +1,5 @@
-import CardCovidStatus from "../CardCovidStatus/CardCovidStatus"
-import data from "../../utils/constants/indonesia"
 import SummaryCovidStyled from "./SummaryCovidStyled"
 import CommonUtils from "../../utils/common_utils"
-import { useSelector } from "react-redux"
 import ENDPOINTS from "../../utils/constants/endpoint"
 
 function SummaryCovid(props){
