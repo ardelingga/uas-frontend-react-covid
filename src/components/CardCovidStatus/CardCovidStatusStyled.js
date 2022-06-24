@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CardGlobalStyled = styled.div`
+const CardCovidStatusStyled = styled.div`
     .grid_item {
         text-align: center;
         padding: 2rem;
@@ -44,4 +44,4 @@ const CardGlobalStyled = styled.div`
     }
 `
 
-export default CardGlobalStyled;
+export default CardCovidStatusStyled;

@@ -5,14 +5,19 @@ const NavbarStyled = styled.div`
         background-color: #06D6A0;
         padding: 1rem;
         color: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     .navbar__brand {
         margin-bottom: 1rem;
+        margin-left: 1rem;
     }
 
     .navbar__list{
         list-style: none;
+        margin-right: 2rem;
     }
 
     .navbar__item{

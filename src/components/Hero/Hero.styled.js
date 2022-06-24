@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeroStyled = styled.div`
     .container {
-        margin: 1rem;
+        margin: 16rem auto 3rem auto;
     }
 
     .hero {
@@ -13,6 +13,7 @@ const HeroStyled = styled.div`
 
     .hero__left {
         margin-bottom: 1rem;
+        margin: 1rem;
     }
 
     .hero__title {
@@ -57,7 +58,7 @@ const HeroStyled = styled.div`
     @media (min-width: 992px) {
         .container {
             max-width: 1200px;
-            margin: 3rem auto;
+            margin: 7rem auto 3rem auto;
         }
 
         .hero {

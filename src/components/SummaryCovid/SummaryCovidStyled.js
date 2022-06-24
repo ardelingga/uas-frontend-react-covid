@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const GlobalCovidStyled = styled.div`
+const SummaryCovidStyled = styled.div`
     .container {
-        background-color: #F8F9FA;
+        background-color: #FFF;
     }
 
     .container section {
@@ -49,34 +49,32 @@ const GlobalCovidStyled = styled.div`
             padding-left: 1rem;
             padding-right: 1rem;
         }
+        .grid_container img{
+            width: 100%;
+        }
     }
 
     /* Medium Screen */
     @media (min-width: 768px) and (max-width: 992px) {
-        .grid_container {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        
-        .grid_container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
         .container {
             padding-left: 1rem;
             padding-right: 1rem;
+        }
+        .grid_container img{
+            width: 100%;
         }
     }
 
     /* Large Screen */
     @media (min-width: 992px) {
-        .grid_container {
-            grid-template-columns: repeat(3, 1fr);
-        }
         .container {
             padding-left: 1rem;
             padding-right: 1rem;
         }
+        .grid_container img{
+            width: 100%;
+        }
     }
 `
 
-export default GlobalCovidStyled;
+export default SummaryCovidStyled;
