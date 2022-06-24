@@ -1,10 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import Hero from "../../components/Hero/Hero";
-import CovidForm from "../../components/CovidForm/CovidForm";
 import CovidStatus from "../../components/CovidStatus/CovidStatus";
-import Provinces from "../../components/Provinces/Provinces";
-import { useEffect, useState } from "react"
-import data from "../../utils/constants/provinces"
+import { useEffect } from "react"
 import axios from "axios";
 import ENDPOINTS from "../../utils/constants/endpoint";
 import { useDispatch } from "react-redux";
@@ -42,8 +39,6 @@ function Global() {
 
     dispatch(setCovidStatus(newCovidStatus));
   }
-  
-  const [listProvinces, setListProvinces] = useState(data.provinces);
 
   return (
     <>

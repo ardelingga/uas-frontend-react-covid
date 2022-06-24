@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import CovidForm from "../../components/CovidForm/CovidForm";
 import CovidStatus from "../../components/CovidStatus/CovidStatus";
 import Hero from "../../components/Hero/Hero";
-import data from "../../utils/constants/provinces";
 import axios from "axios";
 import ENDPOINTS from "../../utils/constants/endpoint";
 import { useDispatch } from "react-redux";

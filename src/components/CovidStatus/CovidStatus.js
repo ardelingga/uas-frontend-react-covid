@@ -1,5 +1,4 @@
 import CardCovidStatus from "../CardCovidStatus/CardCovidStatus"
-import data from "../../utils/constants/indonesia"
 import CovidStatusStyled from "./CovidStatusStyled"
 import CommonUtils from "../../utils/common_utils"
 import { useSelector } from "react-redux"

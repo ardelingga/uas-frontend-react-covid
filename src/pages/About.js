@@ -1,8 +1,11 @@
+import AboutContent from "../components/AboutContent/AboutContent";
 
 function About(){
     return(
         <>
-            <h1>About</h1>
+            <main>
+                <AboutContent/>
+            </main>
         </>
     );
 }
