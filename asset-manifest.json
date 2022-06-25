@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/uas-frontend-react-covid/static/css/main.53f9781b.css",
+    "main.js": "/uas-frontend-react-covid/static/js/main.8b110fdd.js",
+    "static/media/undraw_medical_care_movn 1.png": "/uas-frontend-react-covid/static/media/undraw_medical_care_movn 1.20315973ee0b6e6812f5.png",
+    "static/media/Image_form.png": "/uas-frontend-react-covid/static/media/Image_form.ab866ff8bf882bcffc2d.png",
+    "index.html": "/uas-frontend-react-covid/index.html",
+    "main.53f9781b.css.map": "/uas-frontend-react-covid/static/css/main.53f9781b.css.map",
+    "main.8b110fdd.js.map": "/uas-frontend-react-covid/static/js/main.8b110fdd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53f9781b.css",
+    "static/js/main.8b110fdd.js"
+  ]
+}
