@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53f9781b.css",
+    "main.js": "/static/js/main.a79ab1b9.js",
+    "static/media/undraw_medical_care_movn 1.png": "/static/media/undraw_medical_care_movn 1.20315973ee0b6e6812f5.png",
+    "static/media/Image_form.png": "/static/media/Image_form.ab866ff8bf882bcffc2d.png",
+    "index.html": "/index.html",
+    "main.53f9781b.css.map": "/static/css/main.53f9781b.css.map",
+    "main.a79ab1b9.js.map": "/static/js/main.a79ab1b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53f9781b.css",
+    "static/js/main.a79ab1b9.js"
+  ]
+}
